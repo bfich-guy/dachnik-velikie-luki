@@ -2,23 +2,33 @@ import uvicorn
 from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
 
-from config.server import ServerData, Directories, Mounts
-from utils import include_routers
+from config.system import ServerData
+from config.server import Directories, Mounts
+
+from utils.server import include_routers
 
 from routers.index import index_router
 from routers.about_us import about_us_router
-from routers.products.jars import jars_router
-from routers.products.seaming_machines import seaming_machines_router
-from routers.products.lids import lids_router
+from routers.products.jars.regular import regular_jars_router
+from routers.products.jars.screw import screw_jars_router
+from routers.products.lids.regular import regular_lids_router
+from routers.products.lids.screw import screw_lids_router
+from routers.products.seamingmachines.automatic import automatic_seaming_machines_router
+from routers.products.seamingmachines.semiautomatic import semiautomatic_seaming_machines_router
+from routers.products.seamingmachines.spiral import spiral_seaming_machines_router
 
 
 app: FastAPI = FastAPI()
 routers_list: list[APIRouter] = [
     index_router,
     about_us_router,
-    jars_router,
-    seaming_machines_router,
-    lids_router,
+    regular_jars_router,
+    screw_jars_router,
+    regular_lids_router,
+    screw_lids_router,
+    automatic_seaming_machines_router,
+    semiautomatic_seaming_machines_router,
+    spiral_seaming_machines_router,
 ]
 
 app.mount(Mounts.STATIC.value, StaticFiles(directory=Directories.STATIC.value), name=Directories.STATIC.value)

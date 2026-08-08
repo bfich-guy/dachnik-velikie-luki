@@ -1,0 +1,24 @@
+.dachnik-border {
+    border: 8px solid greenyellow;
+}
+
+
+.dachnik-text {
+    color: greenyellow;
+    text-shadow: green;
+}
+
+
+.dachnik-font {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.dachnik-title {
+    font-size: 64px;
+}
+
+
+.dachnik-info {
+    font-size: 32px;
+}

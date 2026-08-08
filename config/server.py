@@ -1,49 +1,42 @@
 from enum import Enum
 
-
-class Directories(Enum):
-    TEMPLATES = "templates"
-    STATIC = "static"
+from config.system import Directories, Files, FileExtenstion
 
 
 class Mounts(Enum):
-    STATIC = "/static"
+    STATIC = f"/{Directories.STATIC.value}"    
+
+
+class Prefix(Enum):
+    INDEX = f""
+    PRODUCTS = f"/{Directories.PRODUCTS.value}"
+
+    JARS = f"/{Directories.PRODUCTS.value}/{Directories.JARS.value}"
+    LIDS = f"/{Directories.PRODUCTS.value}/{Directories.LIDS.value}"
+    SEAMING_MACHINES = f"/{Directories.PRODUCTS.value}/{Directories.SEAMING_MACHINES.value}"
 
 
 class Endpoints(Enum):
-    INDEX = "/"
-    ABOUT_US = "/about_us"
+    INDEX = f"/"
+    ABOUT_US = f"/{Files.ABOUT_US.value}"
 
-    JARS = "/jars"
-    SEAMING_MACHINES = "/seaming_machines"
-    LIDS = "/lids"
+    REGULAR = f"/{Files.REGULAR.value}"
+    SCREW = f"/{Files.SCREW.value}"
+    AUTOMATIC = f"/{Files.AUTOMATIC.value}"
+    SEMIAUTOMATIC = f"/{Files.SEMIAUTOMATIC.value}"
+    SPIRAL = f"/{Files.SPIRAL.value}"
 
 
 class Templates(Enum):
-    INDEX = "index.html"
-    ABOUT_US = "about_us.html"
+    INDEX = f"{Files.INDEX.value}.{FileExtenstion.HTML.value}"
+    ABOUT_US = f"{Files.ABOUT_US.value}.{FileExtenstion.HTML.value}"
 
-    JARS = "products/jars.html"
-    SEAMING_MACHINES = "products/seaming_machines.html"
-    LIDS = "products/lids.html"
-    
+    REGULAR_JARS = f"{Directories.PRODUCTS.value}/{Directories.JARS.value}/{Files.REGULAR.value}.{FileExtenstion.HTML.value}"
+    SCREW_JARS = f"{Directories.PRODUCTS.value}/{Directories.JARS.value}/{Files.SCREW.value}.{FileExtenstion.HTML.value}"
 
-class Prefix(Enum):
-    INDEX = ""
+    REGULAR_LIDS = f"{Directories.PRODUCTS.value}/{Directories.LIDS.value}/{Files.REGULAR.value}.{FileExtenstion.HTML.value}"
+    SCREW_LIDS = f"{Directories.PRODUCTS.value}/{Directories.LIDS.value}/{Files.SCREW.value}.{FileExtenstion.HTML.value}"
 
-    PRODUCTS = "/products"
-
-
-class Tags(Enum):
-    INDEX = ["Дачник"]
-
-    JARS = ["Банки"]
-    SEAMING_MACHINES = ["Закаточные машины"]
-    LIDS = ["Крышки"]
-
-
-class ServerData(Enum):
-    APP = "app:app"
-    HOST = "127.0.0.1"
-    PORT = 8000
-    RELOAD = True
+    AUTOMATIC_SEAMING_MACHINES = f"{Directories.PRODUCTS.value}/{Directories.SEAMING_MACHINES.value}/{Files.AUTOMATIC.value}.{FileExtenstion.HTML.value}"
+    SEMIAUTOMATIC_SEAMING_MACHINES = f"{Directories.PRODUCTS.value}/{Directories.SEAMING_MACHINES.value}/{Files.SEMIAUTOMATIC.value}.{FileExtenstion.HTML.value}"
+    SPIRAL_SEAMING_MACHINES = f"{Directories.PRODUCTS.value}/{Directories.SEAMING_MACHINES.value}/{Files.SPIRAL.value}.{FileExtenstion.HTML.value}"

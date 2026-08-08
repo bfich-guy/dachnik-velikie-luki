@@ -1,0 +1,16 @@
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    min-height: 100vh;
+}
+
+.dachnik-store-background-image {
+    background-image: url('../images/dachnik_store.png');
+}
+
+.products-view-background-image {
+    background-image: url('../images/products_view.png');
+}
