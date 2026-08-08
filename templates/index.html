@@ -4,13 +4,80 @@
         <title>
             Дачник | Ларек хозяйственных товаров в Великих Луках
         </title>
+        <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
     </head>
     <body>
-        <p>
-            Дачник - это ларек, где вы можете купить все необходимое для вашего дома. 
-            У нас продаются банки для овощей, пленки для теплиц и прочие товары. 
-            Вы получаете уникальный шанс сохранить урожай по дешевым ценам!
-            ДОБРО ПОЖАЛОВАТЬ В "ДАЧНИК"!
-        </p>
+        <header>
+
+        </header>
+        <main>
+            <div class="main background-image dachnik-store-background-image">
+                <p class="main-title">
+                    ДАЧНИК
+                </p>
+                <p class="main-info">
+                    Дачник - это ларек хозяйственных товаров в Великих Луках, где Вы можете приобрести банки, крышки, закаточные машины и прочие товары для Вашей дачи.
+                    Если вы ищете место, где продаются товары для дачи, сада, огородов и так далее, этот сайт вам поможет.
+                </p>
+                <p class="main-info">
+                    На данном сайте можно посмотреть товары и позвонить напрямую владельцу магазина, чтобы сообщить ему о заказе, который будет доставлен.
+                    Так же существует вариант посещения ларька в реальной жизни. 
+                </p>
+                <p class="main-info">
+                    Номер владельца ларька: 8 800 555 35 35
+                </p>
+            </div>
+            <div class="main background-image products-view-background-image">
+                <p class="main-title">
+                    НАШИ ТОВАРЫ
+                </p>
+                <div class="products-menu-grid">
+                    <div class="product-menu-card">
+                        <p class="product-menu-card-title">
+                            Банки
+                        </p>
+                        <a href="/products/jars">
+                            <button class="product-menu-card-button">
+                                Перейти
+                            </button>
+                        </a>
+                    </div>
+                    <div class="product-menu-card">
+                        <p class="product-menu-card-title">
+                            Крышки
+                        </p>
+                        <a href="/products/lids">
+                            <button class="product-menu-card-button">
+                                Перейти
+                            </button>
+                        </a>
+                    </div>
+                    <div class="product-menu-card">
+                        <p class="product-menu-card-title">
+                            Закаточные машинки
+                        </p>
+                        <a href="/products/seaming_machines">
+                            <button class="product-menu-card-button">
+                                Перейти
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="main">
+                <p class="main-title">
+                    МЕНЮ
+                </p>
+                <div class="inline-button-menu">
+                    <a href="/about_us">
+                        <button class="main-button">
+                            О нас
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

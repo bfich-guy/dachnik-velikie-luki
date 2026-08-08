@@ -12,31 +12,33 @@ class Mounts(Enum):
 
 class Endpoints(Enum):
     INDEX = "/"
+    ABOUT_US = "/about_us"
 
     JARS = "/jars"
-    LID_SEAMING_MACHINES = "/lid_seaming_machines"
+    SEAMING_MACHINES = "/seaming_machines"
     LIDS = "/lids"
 
 
 class Templates(Enum):
     INDEX = "index.html"
+    ABOUT_US = "about_us.html"
 
-    JARS = "goods/jars.html"
-    LID_SEAMING_MACHINES = "goods/lid_seaming_machines.html"
-    LIDS = "goods/lids.html"
+    JARS = "products/jars.html"
+    SEAMING_MACHINES = "products/seaming_machines.html"
+    LIDS = "products/lids.html"
     
 
 class Prefix(Enum):
     INDEX = ""
 
-    GOODS = "/goods"
+    PRODUCTS = "/products"
 
 
 class Tags(Enum):
     INDEX = ["Дачник"]
 
     JARS = ["Банки"]
-    LID_SEAMING_MACHINES = ["Закаточные машины"]
+    SEAMING_MACHINES = ["Закаточные машины"]
     LIDS = ["Крышки"]
 
 

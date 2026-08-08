@@ -7,16 +7,16 @@ from config.server import Prefix, Tags, Directories, Endpoints, Templates
 
 templates = Jinja2Templates(directory=Directories.TEMPLATES.value)
 
-index_router: APIRouter = APIRouter(
+about_us_router: APIRouter = APIRouter(
     prefix=Prefix.INDEX.value,
     tags=[Tags.INDEX],
 )
 
-@index_router.get(Endpoints.INDEX.value, response_class=HTMLResponse)
-def index(request: Request):
+@about_us_router.get(Endpoints.ABOUT_US.value, response_class=HTMLResponse)
+def about_us(request: Request):
 
-    index_Jinja2Template: HTMLResponse = templates.TemplateResponse(
-        name=Templates.INDEX.value,
+    about_us_Jinja2Template: HTMLResponse = templates.TemplateResponse(
+        name=Templates.ABOUT_US.value,
         request=request,
     )
-    return index_Jinja2Template
+    return about_us_Jinja2Template

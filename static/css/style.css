@@ -1,0 +1,138 @@
+/* General styles */
+
+.logo {
+    width: 50%;
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.inline-button-menu {
+    display: block;
+}
+
+.common-info {
+    color: yellowgreen;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Main */
+
+.main {
+    background-color: white;
+    border: 8px solid greenyellow;
+    text-align: center;
+}
+
+.main-title {
+    color: greenyellow;
+    font-size: 64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: green 4px 4px;
+}
+
+.main-info {
+    color: greenyellow;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: green 4px 4px;
+}
+
+.main-button {
+    width: 25%;
+    height: 10vh;
+    color: white;
+    background-color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    border: 4px solid orangered;
+    border-radius: 16px;
+}
+
+.main-button:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+
+/* Images backgrounds */
+
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    min-height: 100vh;
+}
+
+.dachnik-store-background-image {
+    background-image: url('../images/dachnik_store.png');
+}
+
+.products-view-background-image {
+    background-image: url('../images/products_view.png');
+}
+
+
+/* Products */
+
+.products-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 2% 2% 2%;
+    gap: 2%;
+    max-width: 100%;
+}
+
+.product-card {
+    background-color: white;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+}
+
+.product-menu-card {
+    border: 8px solid green;
+    border-radius: 16px;
+    background-color: greenyellow;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+}
+
+.product-menu-card-title {
+    color: white;
+    background-color: green;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: green solid 8px;
+    border-radius: 16px;
+}
+
+.product-menu-card-image {
+    width: 100%;
+}
+
+.product-menu-card-button {
+    width: 33%;
+    height: 10vh;
+    color: white;
+    background-color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    border: 4px solid orangered;
+    border-radius: 16px;
+}
+
+.product-menu-card-button:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.product-menu-card-info {
+    color: green;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
