@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Помощь | Дачник
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', path='css/dachnik.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/image.css') }}">
+        <link rel="icon" type="image/png" href="/static/images/dachnik/dachnik_favicon.png">
+    </head>
+    <body>
+        <header>
+            <div class="dachnik-navigation-inline-menu">
+                <button id="about-us-btn" class="dachnik-navigation-inline-menu-button">
+                    О нас
+                </button>
+                <button id="index-btn" class="dachnik-navigation-inline-menu-button">
+                    Главная
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    Помощь
+                </p>
+                <p class="dachnik-main-text">
+                    Данная страница представляет собой FAQ (часто задаваемые вопросы) нашего сайта.
+                    Она поможет Вам сэкономить время тем, что Вы найдете ответ на вопрос прямо сейчас.
+                    Внизу представлены вопросы и ответы на них.
+                </p>
+                <p class="dachnik-main-text">
+                    Если Вы все же не нашли ответ на Ваш вопрос, перейдите на страницу "О нас" и найдите наши номера, затем позвоните по ним.
+                    Владелец ларька ответит Вам по товарам, а разработчик - по сайту ларька "Дачник".
+                </p>
+                <p class="dachnik-main-text">
+                    Мы поможем Вам в неопределенной ситуации и гарантируем, что Вы получите информационную помощь по сайту.
+                    С уважением, "Дачник"!
+                </p>
+            </div>
+            <div class="dachnik-background dachnik-faq-grid-menu">
+                <div class="dachnik-faq-card">
+                    <p class="dachnik-help-question-text">
+                        Как найти ларек "Дачник" в Великих Луках?
+                    </p>
+                    <p class="dachnik-help-answer-text">
+                        Найдите кнопку "О нас" в верхнем меню и нажмите на неё.
+                        Там вы увидите адрес ларька "Дачник" и так же наши номера.
+                    </p>
+                </div>
+                <div class="dachnik-faq-card">
+                    <p class="dachnik-help-question-text">
+                        Что делать, если товар оказался бракованным?
+                    </p>
+                    <p class="dachnik-help-question-text">
+                        Что делать, если нужный товар не найден на сайте?
+                    </p>
+                    <p class="dachnik-help-question-text">
+                        Что делать, если информация о товаре неизвестна или непонятна?
+                    </p>
+                    <p class="dachnik-help-answer-text">
+                        Найдите кнопку "О нас" в верхнем меню и нажмите на неё.
+                        Позвоните владельцу ларька "Дачник" и сообщите о ситуации.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="dachnik-background">
+                <img class="logo-image" src="/static/images/dachnik/dachnik_logo.png">
+            </div>
+        </footer>
+        <script src="/static/js/redirect.js" type="module"></script>
+    </body>
+</html>

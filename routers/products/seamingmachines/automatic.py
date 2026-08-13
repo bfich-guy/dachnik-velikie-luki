@@ -7,7 +7,7 @@ from config.server import Prefix, Directories, Endpoints, Templates
 
 templates = Jinja2Templates(directory=Directories.TEMPLATES.value)
 
-automatic_seaming_machines_router: APIRouter = APIRouter(
+automatic_seaming_machines_router = APIRouter(
     prefix=Prefix.SEAMING_MACHINES.value,
 )
 

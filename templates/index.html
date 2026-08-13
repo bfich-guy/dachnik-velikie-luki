@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Главная | Дачник
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', path='css/dachnik.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/image.css') }}">
+        <link rel="icon" type="image/png" href="/static/images/dachnik/dachnik_favicon.png">
+    </head>
+    <body>
+        <header>
+            <div class="dachnik-navigation-inline-menu">
+                <button id="about-us-btn" class="dachnik-navigation-inline-menu-button">
+                    О нас
+                </button>
+                <button id="help-btn" class="dachnik-navigation-inline-menu-button">
+                    Помощь
+                </button>
+            </div>
+            <div class="dachnik-background">
+                <img class="logo-image" src="/static/images/dachnik/dachnik_logo.png">
+                <p class="dachnik-main-text">
+                    Дачник - это ларек хозяйственных товаров в Великих Луках, где Вы можете приобрести банки, крышки, закаточные машины и прочие товары.
+                    Если вы ищете место, где продаются товары для сада, огородов и так далее, этот сайт вам поможет.
+                </p>
+                <p class="dachnik-main-text">
+                    На нашем сайте показаны товары, продающиеся в ларьке "Дачник".
+                    Здесь Вы найдете то, что понадобится Вам для Вашего урожая по выгодным ценам.
+                    Информацию про наш ларек Вы найдете в странице "О нас", а по вопросам заходите в "Помощь".
+                    Мы продаем только качественные и надежные товары и отсеиваем бракованные на этапе контроля качества.
+                </p>
+                <p class="dachnik-main-text">
+                    Ниже представлен каталог наших товаров.
+                    Чтобы найти товар в желаемой вами категории, нажмите "Перейти".
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    Банки
+                </p>
+                <div class="dachnik-background dachnik-product-grid-menu">
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            СКО
+                        </p>
+                        <button id="regular-jars-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            Винтовые
+                        </p>
+                        <button id="screw-jars-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                </div>
+                <p class="dachnik-main-title">
+                    Крышки
+                </p>
+                <div class="dachnik-background dachnik-product-grid-menu">
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            СКО
+                        </p>
+                        <button id="regular-lids-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            Винтовые
+                        </p>
+                        <button id="screw-lids-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                </div>
+                <p class="dachnik-main-title">
+                    Закаточные машинки
+                </p>
+                <div class="dachnik-background dachnik-product-grid-menu">
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            Автоматические
+                        </p>
+                        <button id="auto-seaming-machines-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            Полуавтоматические
+                        </p>
+                        <button id="semiauto-seaming-machines-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                    <div class="dachnik-product-card">
+                        <p class="dachnik-product-title">
+                            Ручные
+                        </p>
+                        <button id="spiral-seaming-machines-btn" class="dachnik-product-button">
+                            Перейти
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    А вот и наш славный ларек!
+                </p>
+            </div>
+            <div class="dachnik-background background-image dachnik-store">
+                
+            </div>
+        </footer>
+        <script src="/static/js/redirect.js" type="module"></script>
+    </body>
+</html>

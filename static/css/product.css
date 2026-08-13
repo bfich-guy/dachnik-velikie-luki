@@ -1,0 +1,54 @@
+/* Background */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2% 2% 4% 2%;
+    gap: 2%;
+    max-width: 100%;
+}
+
+.product-card {
+    border: 4px solid greenyellow;
+    background-color: limegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Text */
+
+.product-title {
+    color: white;
+    font: bold 8vh 'Arial';
+    text-align: center;
+}
+
+.product-description-list {
+    list-style-type: none;
+}
+
+.product-description-text {
+    color: white;
+    font: bold 100% 'Arial';
+}
+
+
+/* Button */
+
+.product-button {
+    background: transparent;
+    border: none;
+    padding: 0 0 32px 0;
+    cursor: pointer;
+    font: bold 2vw 'Arial';
+    color: white;
+    scale: 1.0;
+    transition: scale 0.25s ease-in-out
+}
+
+.product-button:hover {
+    scale: 1.2;
+}

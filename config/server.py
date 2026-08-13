@@ -19,6 +19,7 @@ class Prefix(Enum):
 class Endpoints(Enum):
     INDEX = f"/"
     ABOUT_US = f"/{Files.ABOUT_US.value}"
+    HELP = f"/{Files.HELP.value}"
 
     REGULAR = f"/{Files.REGULAR.value}"
     SCREW = f"/{Files.SCREW.value}"
@@ -30,6 +31,7 @@ class Endpoints(Enum):
 class Templates(Enum):
     INDEX = f"{Files.INDEX.value}.{FileExtenstion.HTML.value}"
     ABOUT_US = f"{Files.ABOUT_US.value}.{FileExtenstion.HTML.value}"
+    HELP = f"{Files.HELP.value}.{FileExtenstion.HTML.value}"
 
     REGULAR_JARS = f"{Directories.PRODUCTS.value}/{Directories.JARS.value}/{Files.REGULAR.value}.{FileExtenstion.HTML.value}"
     SCREW_JARS = f"{Directories.PRODUCTS.value}/{Directories.JARS.value}/{Files.SCREW.value}.{FileExtenstion.HTML.value}"

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            О нас | Дачник
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', path='css/dachnik.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/image.css') }}">
+        <link rel="icon" type="image/png" href="/static/images/dachnik/dachnik_favicon.png">
+    </head>
+    <body>
+        <header>
+            <div class="dachnik-navigation-inline-menu">
+                <button id="index-btn" class="dachnik-navigation-inline-menu-button">
+                    Главная
+                </button>
+                <button id="help-btn" class="dachnik-navigation-inline-menu-button">
+                    Помощь
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="dachnik-border">
+                <p class="dachnik-main-title">
+                    О нас
+                </p>
+                <p class="dachnik-main-text">
+                    МЫ НЕ СОБИРАЕМ НИКАКИХ ПОЛЬЗОВАТЕЛЬСКИХ ДАННЫХ ИЛИ СРЕДСТВ НИ В КАКОМ ВИДЕ.
+                    Данный сайт создан исключительно для ознакомления с ларьком "Дачник" в городе Великие Луки и его товарами.
+                    Программное обеспечение ничего не знает о пользователях.
+                </p>
+                <p class="dachnik-main-text">
+                    Адрес: улица Пушкина, дом Колотушкина
+                </p>
+                <p class="dachnik-main-text">
+                    Номер владельца ларька "Дачник": 8 800 555 35 35
+                </p>
+                <p class="dachnik-main-text">
+                    Номер разработчика сайта "Дачник": 8 800 55 35 35
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="dachnik-background">
+                <img class="logo-image" src="/static/images/dachnik/dachnik_logo.png">
+            </div>
+        </footer>
+        <script src="/static/js/redirect.js" type="module"></script>
+    </body>
+</html>

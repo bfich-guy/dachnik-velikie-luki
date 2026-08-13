@@ -7,10 +7,15 @@
     min-height: 100vh;
 }
 
-.dachnik-store-background-image {
-    background-image: url('../images/dachnik_store.png');
+.logo-image {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
 }
 
-.products-view-background-image {
-    background-image: url('../images/products_view.png');
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

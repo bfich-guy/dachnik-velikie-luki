@@ -7,7 +7,7 @@ from config.server import Prefix, Directories, Endpoints, Templates
 
 templates = Jinja2Templates(directory=Directories.TEMPLATES.value)
 
-index_router: APIRouter = APIRouter(
+index_router = APIRouter(
     prefix=Prefix.INDEX.value,
 )
 

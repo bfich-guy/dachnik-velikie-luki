@@ -9,6 +9,7 @@ from utils.server import include_routers
 
 from routers.index import index_router
 from routers.about_us import about_us_router
+from routers.help import help_router
 from routers.products.jars.regular import regular_jars_router
 from routers.products.jars.screw import screw_jars_router
 from routers.products.lids.regular import regular_lids_router
@@ -18,10 +19,11 @@ from routers.products.seamingmachines.semiautomatic import semiautomatic_seaming
 from routers.products.seamingmachines.spiral import spiral_seaming_machines_router
 
 
-app: FastAPI = FastAPI()
+app = FastAPI()
 routers_list: list[APIRouter] = [
     index_router,
     about_us_router,
+    help_router,
     regular_jars_router,
     screw_jars_router,
     regular_lids_router,

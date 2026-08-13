@@ -1,27 +1,49 @@
 export const buttonIdDict = {
     index: "index-btn",
     aboutUs: "about-us-btn",
+    help: "help-btn",
 
-    jars: "jars-btn",
-    lids: "lids-btn",
-    seamingMachines: "seaming-machines-btn",
+    regularJars: "regular-jars-btn",
+    screwJars: "screw-jars-btn",
+
+    regularLids: "regular-lids-btn",
+    screwLids: "screw-lids-btn",
+
+    AutoSeamingMachines: "auto-seaming-machines-btn",
+    SemiautoSeamingMachines: "semiauto-seaming-machines-btn",
+    SpiralSeamingMachines: "spiral-seaming-machines-btn",
 };
 
 
 export const endpointDict = {
     index: "/",
     aboutUs: "/about_us",
+    help: "/help",
 
-    jars: "/products/jars",
-    lids: "/products/lids",
-    seamingMachines: "/products/seaming_machines",
+    regularJars: "/products/jars/regular",
+    screwJars: "/products/jars/screw",
+
+    regularLids: "/products/lids/regular",
+    screwLids: "/products/lids/screw",
+
+    AutoSeamingMachines: "/products/seamingmachines/automatic",
+    SemiautoSeamingMachines: "/products/seamingmachines/semiautomatic",
+    SpiralSeamingMachines: "/products/seamingmachines/spiral",
 };
 
 
 export const pageNameList = [
     "index",
     "aboutUs",
-    "jars",
-    "lids",
-    "seamingMachines",
+    "help",
+
+    "regularJars",
+    "screwJars",
+
+    "regularLids",
+    "screwLids",
+
+    "AutoSeamingMachines",
+    "SemiautoSeamingMachines",
+    "SpiralSeamingMachines",
 ];

@@ -7,11 +7,11 @@ from config.server import Prefix, Directories, Endpoints, Templates
 
 templates = Jinja2Templates(directory=Directories.TEMPLATES.value)
 
-spiral_seaming_machines_router: APIRouter = APIRouter(
+spiral_seaming_machines_router = APIRouter(
     prefix=Prefix.SEAMING_MACHINES.value,
 )
 
-@spiral_seaming_machines_router.get(Endpoints.SEMIAUTOMATIC.value, response_class=HTMLResponse)
+@spiral_seaming_machines_router.get(Endpoints.SPIRAL.value, response_class=HTMLResponse)
 def spiral_seaming_machines(request: Request):
 
     spiral_seaming_machines_template: HTMLResponse = templates.TemplateResponse(

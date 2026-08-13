@@ -14,6 +14,7 @@ class Directories(Enum):
 class Files(Enum):
     INDEX = "index"
     ABOUT_US = "about_us"
+    HELP = "help"
 
     REGULAR = "regular"
     SCREW = "screw"

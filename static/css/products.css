@@ -1,7 +1,0 @@
-.products-menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2% 2% 2% 2%;
-    gap: 2%;
-    max-width: 100%;
-}
