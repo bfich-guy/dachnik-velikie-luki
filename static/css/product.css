@@ -2,7 +2,7 @@
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 2% 2% 4% 2%;
     gap: 2%;
     max-width: 100%;
@@ -13,8 +13,7 @@
     background-color: limegreen;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Каталог | Дачник
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', path='css/dachnik.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/image.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/product.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', path='css/search.css') }}">
+        <link rel="icon" type="image/png" href="/static/images/dachnik/dachnik_favicon.png">
+    </head>
+    <body>
+        <header>
+            <div class="dachnik-navigation-inline-menu">
+                <button id="about-us-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/about_us'">
+                    О нас
+                </button>
+                <button id="index-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/'">
+                    Главная
+                </button>
+                <button id="help-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/help'">
+                    Помощь
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    Каталог товаров
+                </p>
+            </div>
+            <div class="dachnik-background">
+                <p class="dachnik-main-text">
+                    Представляем Вам поисковый алгоритм Дачника для каталога товаров.
+                    Чтобы Дачник смог найти Вам нужный товар, воспользуйтесь деревом внизу.
+                    Нажимайте на треугольники и в конце Вы увидите квадратик (чекбокс), на который тоже нужно нажать.
+                    И наконец найдите и нажмите ниже каталога кнопку "Найти", которая начнет поиск Вашего товара.
+                    После этого Вам в каталоге попадутся только те товары, что Вы ищете.
+                    Алгоритм поможет Вам сократить время поиска Вашего товара в разы за пару нажатий.
+                </p>
+                <p class="dachnik-main-text">
+                    Дачник рад помочь именно Вашему урожаю здесь и сейчас!
+                    Просто подскажите ему товар в дереве и он весь ларек перероет!
+                </p>
+            </div>
+            <div class="dachnik-background search-menu">
+                <button id="search-btn" class="search-button">
+                    <img src="/static/images/dachnik/dachnik_search_icon.png">
+                </button>
+            </div>
+            <div class="search-tree">
+                <div class="dachnik-background search-branch">
+                    <details>
+                        <summary class="search-text">
+                            Банки
+                        </summary>
+                        <div class="dachnik-background search-branch">
+                            <details>
+                                <summary class="search-text">
+                                    СКО
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="jars-regular-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                            <details>
+                                <summary class="search-text">
+                                    Винтовые
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="jars-screw-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                    <details>
+                        <summary class="search-text">
+                            Крышки
+                        </summary>
+                        <div class="dachnik-background search-branch">
+                            <details>
+                                <summary class="search-text">
+                                    СКО
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="lids-regular-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                            <details>
+                                <summary class="search-text">
+                                    Винтовые
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="lids-screw-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                    <details>
+                        <summary class="search-text">
+                            Закаточные машинки
+                        </summary>
+                        <div class="dachnik-background search-branch">
+                            <details>
+                                <summary class="search-text">
+                                    Автоматические
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="seamingmachines-auto-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                            <details>
+                                <summary class="search-text">
+                                    Полуавтоматические
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="seamingmachines-semiauto-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                            <details>
+                                <summary class="search-text">
+                                    Ручные
+                                </summary>
+                                <div class="dachnik-background">
+                                    <input id="seamingmachines-spiral-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    Наши товары
+                </p>
+            </div>
+            <div id="product-catalog" class="dachnik-background product-grid">
+                
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="/static/js/catalog/checkboxlistening.js" type="module"></script>
+        <script src="/static/js/catalog/generatecatalog.js" type="module"></script>
+        <script src="/static/js/catalog/searchproduct.js" type="module"></script>
+    </body>
+</html>

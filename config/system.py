@@ -1,35 +1,41 @@
 from enum import Enum
 
 
-class Directories(Enum):
+class Folders(Enum):
     TEMPLATES = "templates"
     STATIC = "static"
-    
-    PRODUCTS = "products"
-    JARS = "jars"
-    LIDS = "lids"
-    SEAMING_MACHINES = "seamingmachines"
+
+    PRODUCTS_IMAGES = "static/images/products"
 
 
 class Files(Enum):
-    INDEX = "index"
     ABOUT_US = "about_us"
+    CATALOG = "catalog"
     HELP = "help"
+    INDEX = "index"
 
-    REGULAR = "regular"
-    SCREW = "screw"
-    AUTOMATIC = "automatic"
-    SEMIAUTOMATIC = "semiautomatic"
-    SPIRAL = "spiral"
+    PRODUCTS = "products"
 
 
-class FileExtenstion(Enum):
+class FileExtenstions(Enum):
     HTML = "html"
     PY = "py"
+    PNG = "png"
 
 
 class ServerData(Enum):
-    APP = "app:app"
-    HOST = "127.0.0.1"
-    PORT = 8000
-    RELOAD = True
+    APP_NAME = "app:app"
+    APP_HOST = "127.0.0.1"
+    APP_PORT = 8000
+    APP_RELOAD = True
+
+
+class DotenvServerKeys(Enum):
+    APP_NAME = "APP_NAME"
+    APP_HOST = "APP_HOST"
+    APP_PORT = "APP_POST"
+    APP_RELOAD = "APP_RELOAD"
+
+
+class Characters(Enum):
+    DOT = "."

@@ -2,10 +2,11 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
-from config.server import Prefix, Directories, Endpoints, Templates
+from config.system import Folders
+from config.server import Prefix, Endpoints, Templates
 
 
-templates = Jinja2Templates(directory=Directories.TEMPLATES.value)
+templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 
 about_us_router = APIRouter(
     prefix=Prefix.INDEX.value,

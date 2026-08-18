@@ -11,10 +11,13 @@
     <body>
         <header>
             <div class="dachnik-navigation-inline-menu">
-                <button id="index-btn" class="dachnik-navigation-inline-menu-button">
+                <button id="catalog-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/catalog'">
+                    Каталог
+                </button>
+                <button id="index-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/'">
                     Главная
                 </button>
-                <button id="help-btn" class="dachnik-navigation-inline-menu-button">
+                <button id="help-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/help'">
                     Помощь
                 </button>
             </div>
@@ -26,8 +29,8 @@
                 </p>
                 <p class="dachnik-main-text">
                     МЫ НЕ СОБИРАЕМ НИКАКИХ ПОЛЬЗОВАТЕЛЬСКИХ ДАННЫХ ИЛИ СРЕДСТВ НИ В КАКОМ ВИДЕ.
-                    Данный сайт создан исключительно для ознакомления с ларьком "Дачник" в городе Великие Луки и его товарами.
-                    Программное обеспечение ничего не знает о пользователях.
+                    Дачник запоминает исключительно Ваш выбранный товар и забывает все после закрытия вкладки.
+                    Он не знает, кто именно выбрал товар, мы знаем только то, что пользователь выбрал товар.
                 </p>
                 <p class="dachnik-main-text">
                     Адрес: улица Пушкина, дом Колотушкина
@@ -45,6 +48,5 @@
                 <img class="logo-image" src="/static/images/dachnik/dachnik_logo.png">
             </div>
         </footer>
-        <script src="/static/js/redirect.js" type="module"></script>
     </body>
 </html>

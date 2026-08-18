@@ -1,0 +1,45 @@
+.search-checkbox {
+    appearance: none;
+    border: 2px solid lightgray;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}
+
+.search-checkbox:checked {
+    background-color: green;
+}
+
+.search-tree {
+    
+}
+
+.search-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-branch {
+    gap: 4px;
+    padding: 0 0 0 2%;
+}
+
+.search-text {
+    color: green;
+    font: bold 32px 'Arial';
+    width: fit-content;
+}
+
+.search-button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.search-input {
+    border: none;
+}

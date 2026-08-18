@@ -8,15 +8,15 @@ from config.server import Prefix, Endpoints, Templates
 
 templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 
-help_router = APIRouter(
+catalog_router = APIRouter(
     prefix=Prefix.INDEX.value,
 )
 
-@help_router.get(Endpoints.HELP.value, response_class=HTMLResponse)
-def help(request: Request):
+@catalog_router.get(Endpoints.CATALOG.value, response_class=HTMLResponse)
+def catalog(request: Request):
 
-    help_template: HTMLResponse = templates.TemplateResponse(
-        name=Templates.HELP.value,
+    catalog_template: HTMLResponse = templates.TemplateResponse(
+        name=Templates.CATALOG.value,
         request=request,
     )
-    return help_template
+    return catalog_template

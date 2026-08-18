@@ -11,11 +11,14 @@
     <body>
         <header>
             <div class="dachnik-navigation-inline-menu">
-                <button id="about-us-btn" class="dachnik-navigation-inline-menu-button">
+                <button id="about-us-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/about_us'">
                     О нас
                 </button>
-                <button id="index-btn" class="dachnik-navigation-inline-menu-button">
+                <button id="index-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/'">
                     Главная
+                </button>
+                <button id="catalog-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/catalog'">
+                    Каталог
                 </button>
             </div>
         </header>
@@ -70,6 +73,5 @@
                 <img class="logo-image" src="/static/images/dachnik/dachnik_logo.png">
             </div>
         </footer>
-        <script src="/static/js/redirect.js" type="module"></script>
     </body>
 </html>

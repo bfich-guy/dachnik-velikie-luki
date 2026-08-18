@@ -40,6 +40,11 @@
     margin: 4vw;
 }
 
+.dachnik-regular-text {
+    color: green;
+    font: bold 24px 'Arial';
+}
+
 .dachnik-navigation-inline-menu-text {
     color: white;
     font: bold 16px 'Arial';
@@ -72,7 +77,18 @@
 }
 
 .dachnik-navigation-inline-menu-button:hover {
+    transition: 0.25s;
     scale: 1.2;
+}
+
+.dachnik-main-button {
+    border: 8px solid green;
+    border-radius: 16px;
+    background: transparent;
+    padding: 16px 16px 16px 16px;
+    cursor: pointer;
+    font: bold 32px 'Arial';
+    color: green;
 }
 
 .dachnik-product-button{
