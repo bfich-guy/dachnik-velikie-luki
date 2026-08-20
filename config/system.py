@@ -39,3 +39,5 @@ class DotenvServerKeys(Enum):
 
 class Characters(Enum):
     DOT = "."
+    MINUS = "-"
+    

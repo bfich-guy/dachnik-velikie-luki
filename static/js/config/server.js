@@ -29,11 +29,3 @@ export const endpointDict = {
 
     "products": "/products",
 };
-
-
-export const pageNameList = [
-    "aboutUs",
-    "catalog",
-    "help",
-    "index",
-];

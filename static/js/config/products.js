@@ -9,19 +9,6 @@ export const productTypesList = [
 ];
 
 
-export const productTypeDict = {
-    "jarRegular": "jar_regular",
-    "jarScrew": "jar_screw",
-
-    "lidRegular": "lid_regular",
-    "lidScrew": "lid_screw",
-
-    "seamingMachineAuto": "seamingmachine_auto",
-    "seamingMachineSemiauto": "seamingmachine_semiauto",
-    "seamingMachineSpiral": "seamingmachine_spiral",
-};
-
-
 export const productNamesDict = {
     "jar_regular": "СКО банки",
     "jar_screw": "винтовые банки",
@@ -35,14 +22,7 @@ export const productNamesDict = {
 };
 
 
-export const productAttributesKeysList = [
-    "type",
-    "volume",
-    "diameter",
-];
-
-
-export const productsAttributesRussianTranslationsDict = {
+export const productsAttributesNamesDict = {
     "type": "Тип",
     "volume": "Объем",
     "diameter": "Диаметр",

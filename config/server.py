@@ -29,3 +29,4 @@ class Templates(Enum):
 
 class JSONKeys(Enum):
     PRODUCTS_IMAGES_FILES_NAMES_LIST = "products_images_files_names_list"
+    PRODUCTS_DATA_LIST = "products_data_list"

@@ -32,17 +32,29 @@
             </div>
             <div class="dachnik-background">
                 <p class="dachnik-main-text">
-                    Представляем Вам поисковый алгоритм Дачника для каталога товаров.
-                    Чтобы Дачник смог найти Вам нужный товар, воспользуйтесь деревом внизу.
-                    Нажимайте на треугольники и в конце Вы увидите квадратик (чекбокс), на который тоже нужно нажать.
-                    И наконец найдите и нажмите ниже каталога кнопку "Найти", которая начнет поиск Вашего товара.
-                    После этого Вам в каталоге попадутся только те товары, что Вы ищете.
-                    Алгоритм поможет Вам сократить время поиска Вашего товара в разы за пару нажатий.
+                    Дачник представляет Вам его ларек на нашем сайте!
+                    Здесь есть картинки товаров, которые он продает.
+                    Однако Дачник сам немолодой, не понимает слов за экраном.
+                    Помогите ему с помощью дерева поиска ниже!
+                    Нажимайте на треугольники, где написан Ваш нужный товар. 
+                    В конце будут квадратики, на которые тоже нужно нажать.
+                    Вам попадутся только те товары, что Вы ищете.
                 </p>
                 <p class="dachnik-main-text">
                     Дачник рад помочь именно Вашему урожаю здесь и сейчас!
                     Просто подскажите ему товар в дереве и он весь ларек перероет!
+                    Он скажет, что Вы искали в последний раз и так же сколько он товара нашел.
+                    Дачник — человек позитивный, жизнерадостный и даже мухи не обидит.
+                    Он — специалист по консервированию урожая и защите от сорняков!
                 </p>
+            </div>
+            <div class="dachnik-background">
+                <p class="dachnik-main-title">
+                    Слова Дачника
+                </p>
+            </div>
+            <div class="dachnik-background">
+                <p id="dachnik-phrase" class="dachnik-main-text"></p>
             </div>
             <div class="dachnik-background search-menu">
                 <button id="search-btn" class="search-button">
@@ -51,12 +63,12 @@
             </div>
             <div class="search-tree">
                 <div class="dachnik-background search-branch">
-                    <details>
+                    <details name="search-branch">
                         <summary class="search-text">
                             Банки
                         </summary>
                         <div class="dachnik-background search-branch">
-                            <details>
+                            <details name="search-branch-jars">
                                 <summary class="search-text">
                                     СКО
                                 </summary>
@@ -64,7 +76,7 @@
                                     <input id="jars-regular-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
                                 </div>
                             </details>
-                            <details>
+                            <details name="search-branch-jars">
                                 <summary class="search-text">
                                     Винтовые
                                 </summary>
@@ -74,12 +86,12 @@
                             </details>
                         </div>
                     </details>
-                    <details>
+                    <details name="search-branch">
                         <summary class="search-text">
                             Крышки
                         </summary>
                         <div class="dachnik-background search-branch">
-                            <details>
+                            <details name="search-branch-lids">
                                 <summary class="search-text">
                                     СКО
                                 </summary>
@@ -87,7 +99,7 @@
                                     <input id="lids-regular-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
                                 </div>
                             </details>
-                            <details>
+                            <details name="search-branch-lids">
                                 <summary class="search-text">
                                     Винтовые
                                 </summary>
@@ -97,12 +109,12 @@
                             </details>
                         </div>
                     </details>
-                    <details>
+                    <details name="search-branch">
                         <summary class="search-text">
                             Закаточные машинки
                         </summary>
                         <div class="dachnik-background search-branch">
-                            <details>
+                            <details name="search-branch-seamingmachines">
                                 <summary class="search-text">
                                     Автоматические
                                 </summary>
@@ -110,7 +122,7 @@
                                     <input id="seamingmachines-auto-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
                                 </div>
                             </details>
-                            <details>
+                            <details name="search-branch-seamingmachines">
                                 <summary class="search-text">
                                     Полуавтоматические
                                 </summary>
@@ -118,7 +130,7 @@
                                     <input id="seamingmachines-semiauto-checkbox" type="radio" class="search-checkbox" name="search-checkbox">
                                 </div>
                             </details>
-                            <details>
+                            <details name="search-branch-seamingmachines">
                                 <summary class="search-text">
                                     Ручные
                                 </summary>
@@ -140,9 +152,10 @@
             </div>
         </main>
         <footer>
-
+            
         </footer>
         <script src="/static/js/catalog/checkboxlistening.js" type="module"></script>
+        <script src="/static/js/catalog/dachnikphrase.js" type="module"></script>
         <script src="/static/js/catalog/generatecatalog.js" type="module"></script>
         <script src="/static/js/catalog/searchproduct.js" type="module"></script>
     </body>

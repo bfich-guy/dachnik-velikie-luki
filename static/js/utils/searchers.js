@@ -1,5 +1,6 @@
-import { productNamesDict } from "../config/products.js";
 import { cssClassesDict } from "../config/styles.js";
+
+import { isObjectNullOrUndefined } from "./helpers.js";
 
 
 export function searchProduct({
@@ -7,9 +8,15 @@ export function searchProduct({
     productCatalogId,
 }) {
     const productCatalog = document.getElementById(productCatalogId);
-    const productCardDoesNotExist = !productCatalog
+    const productCardDoesNotExist = isObjectNullOrUndefined({object: productCatalog});
     
     if (productCardDoesNotExist) {
+        return;
+    }
+
+    const noProductIsChosen = isObjectNullOrUndefined({object: targetProductType});
+
+    if (noProductIsChosen) {
         return;
     }
     

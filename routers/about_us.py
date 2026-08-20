@@ -7,10 +7,7 @@ from config.server import Prefix, Endpoints, Templates
 
 
 templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
-
-about_us_router = APIRouter(
-    prefix=Prefix.INDEX.value,
-)
+about_us_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @about_us_router.get(Endpoints.ABOUT_US.value, response_class=HTMLResponse)
 def about_us(request: Request):

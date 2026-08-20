@@ -7,10 +7,7 @@ from config.server import Prefix, Endpoints, Templates
 
 
 templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
-
-index_router = APIRouter(
-    prefix=Prefix.INDEX.value,
-)
+index_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @index_router.get(Endpoints.INDEX.value, response_class=HTMLResponse)
 def index(request: Request):

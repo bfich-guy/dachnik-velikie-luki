@@ -19,19 +19,10 @@
 
 /* Text */
 
-.product-title {
-    color: white;
-    font: bold 8vh 'Arial';
-    text-align: center;
-}
-
-.product-description-list {
-    list-style-type: none;
-}
-
 .product-description-text {
     color: white;
     font: bold 100% 'Arial';
+    text-align: center;
 }
 
 

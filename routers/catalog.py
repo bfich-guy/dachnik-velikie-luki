@@ -7,10 +7,7 @@ from config.server import Prefix, Endpoints, Templates
 
 
 templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
-
-catalog_router = APIRouter(
-    prefix=Prefix.INDEX.value,
-)
+catalog_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @catalog_router.get(Endpoints.CATALOG.value, response_class=HTMLResponse)
 def catalog(request: Request):

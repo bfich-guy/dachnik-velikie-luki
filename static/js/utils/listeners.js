@@ -1,25 +1,28 @@
+import { doListsHaveSameLength } from "./helpers.js";
+
+
 export function addCheckboxListener({
     checkboxIdList,
     key,
     valuesList,
 }) {
-    const checkboxIdListLength = checkboxIdList.length;
-    const valuesListLength = valuesList.length;
-
-    const lengthsAreMismatched = checkboxIdListLength !== valuesListLength;
+    const listsMatrix = [checkboxIdList, valuesList];
+    const lengthsAreMismatched = !doListsHaveSameLength({listsMatrix: listsMatrix});
 
     if (lengthsAreMismatched) {
         return;
-    } else {
-        for (let index = 0; index < valuesListLength; index++) {
-            const checkboxId = checkboxIdList[index];
-            const value = valuesList[index];
+    }
 
-            const checkboxWidget = document.getElementById(checkboxId);
+    const valuesListLength = valuesList.length;
 
-            checkboxWidget.addEventListener("change", () => {
-                sessionStorage.setItem(key, value)
-            });
-        }
+    for (let index = 0; index < valuesListLength; index++) {
+        const checkboxId = checkboxIdList[index];
+        const value = valuesList[index];
+
+        const checkboxWidget = document.getElementById(checkboxId);
+
+        checkboxWidget.addEventListener("change", () => {
+            sessionStorage.setItem(key, value)
+        });
     }
 }

@@ -20,3 +20,50 @@ def get_files_names_list(
             files_names_list.append(file_name)
 
     return files_names_list
+
+
+def get_dictionaries_list_from_strings_list(
+    *,
+    strings_list: list[str],
+    split_character: str = Characters.MINUS.value,
+) -> list[dict]:
+
+    dictionaries_list: list[dict] = []
+
+    for file_name in strings_list:
+        dictionary: dict = {}
+
+        tokens_list: list[str] = file_name.split(split_character)
+
+        keys_list: list[str] = []
+        values_list: list[str] = []
+
+        for index, token in enumerate(tokens_list):
+            token_is_key: bool = index % 2 == 0
+            token_is_value: bool = index % 2 == 1
+
+            list_map: dict[bool, list[str]] = {
+                token_is_key: keys_list,
+                token_is_value: values_list,
+            }
+
+            result_list: list[str] = list_map[True]
+            result_list.append(token)
+
+        keys_list_length: int = len(keys_list)
+        values_list_length: int = len(values_list)
+
+        extra_key_exists: bool = keys_list_length > values_list_length
+
+        if extra_key_exists:
+            keys_list.pop()
+
+        for index in range(values_list_length):
+            key: str = keys_list[index]
+            value: str = values_list[index]
+
+            dictionary[key] = value
+
+        dictionaries_list.append(dictionary)
+
+    return dictionaries_list

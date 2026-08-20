@@ -3,7 +3,5 @@ export const cssClassesDict = {
     "productImage": "product-image",
     "productDescriptionText": "product-description-text",
 
-    "productType": "product-type",
-    "productVolume": "product-volume",
-    "productDiameter": "product-diameter",
+    "productType": "type",
 };
