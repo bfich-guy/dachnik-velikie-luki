@@ -10,10 +10,6 @@
     background-color: green;
 }
 
-.search-tree {
-    
-}
-
 .search-menu {
     display: flex;
     flex-direction: column;

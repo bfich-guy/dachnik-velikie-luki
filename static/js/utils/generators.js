@@ -63,7 +63,7 @@ export function generateCatalog({
                 productCatalog.insertAdjacentElement('beforeend', productWidget);
             }
         })
-};
+}
 
 
 export function generateDachnikPhrase({
@@ -106,4 +106,4 @@ export function generateDachnikPhrase({
         sessionStorage.setItem("dachnikPhrase", dachnikPhrase);
     }
 
-};
+}

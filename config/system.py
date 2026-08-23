@@ -23,13 +23,6 @@ class FileExtenstions(Enum):
     PNG = "png"
 
 
-class ServerData(Enum):
-    APP_NAME = "app:app"
-    APP_HOST = "127.0.0.1"
-    APP_PORT = 8000
-    APP_RELOAD = True
-
-
 class DotenvServerKeys(Enum):
     APP_NAME = "APP_NAME"
     APP_HOST = "APP_HOST"
@@ -40,4 +33,3 @@ class DotenvServerKeys(Enum):
 class Characters(Enum):
     DOT = "."
     MINUS = "-"
-    

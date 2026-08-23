@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 index_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @index_router.get(Endpoints.INDEX.value, response_class=HTMLResponse)
-def index(request: Request):
+def index(request: Request) -> HTMLResponse:
 
     index_template: HTMLResponse = templates.TemplateResponse(
         name=Templates.INDEX.value,

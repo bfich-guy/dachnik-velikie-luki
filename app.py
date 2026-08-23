@@ -1,10 +1,8 @@
-import uvicorn
 from fastapi import FastAPI, APIRouter
 from fastapi.staticfiles import StaticFiles
-import os
-from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 
-from config.system import DotenvServerKeys, Folders, ServerData
+from config.system import Folders
 from config.server import Mounts
 
 from utils.server import include_routers
@@ -15,10 +13,23 @@ from routers.help import help_router
 from routers.index import index_router
 from routers.products import products_router
 
-
-load_dotenv()
-
 app = FastAPI()
+
+origins_list: list[str] = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:3000",
+    "https://dachnik-velikie-luki.vercel.app",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins_list,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    )
+
 routers_list: list[APIRouter] = [
     about_us_router,
     catalog_router,
@@ -27,15 +38,13 @@ routers_list: list[APIRouter] = [
     products_router,
 ]
 
-app.mount(Mounts.STATIC.value, StaticFiles(directory=Folders.STATIC.value), name=Folders.STATIC.value)
-include_routers(app=app, routers_list=routers_list)
+include_routers(
+    app=app, 
+    routers_list=routers_list,
+    )
 
-server_is_launching_directly: bool = __name__ == "__main__"
-
-if server_is_launching_directly:
-    uvicorn.run(
-        os.getenv(DotenvServerKeys.APP_NAME.value, ServerData.APP_NAME.value), 
-        host=os.getenv(DotenvServerKeys.APP_HOST.value, ServerData.APP_HOST.value),
-        port=int(os.getenv(DotenvServerKeys.APP_PORT.value, ServerData.APP_PORT.value)), 
-        reload=os.getenv(DotenvServerKeys.APP_RELOAD.value, str(ServerData.APP_RELOAD.value)) == "True",
-        )
+app.mount(
+    Mounts.STATIC.value, 
+    StaticFiles(directory=Folders.STATIC.value), 
+    name=Folders.STATIC.value,
+    )

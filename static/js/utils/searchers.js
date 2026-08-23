@@ -38,4 +38,4 @@ export function searchProduct({
     }
 
     sessionStorage.setItem("searchedProductsAmount", searchedProductsAmount);
-};
+}

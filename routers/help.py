@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 help_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @help_router.get(Endpoints.HELP.value, response_class=HTMLResponse)
-def help(request: Request):
+def help(request: Request) -> HTMLResponse:
 
     help_template: HTMLResponse = templates.TemplateResponse(
         name=Templates.HELP.value,

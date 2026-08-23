@@ -10,7 +10,7 @@ templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 catalog_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @catalog_router.get(Endpoints.CATALOG.value, response_class=HTMLResponse)
-def catalog(request: Request):
+def catalog(request: Request) -> HTMLResponse:
 
     catalog_template: HTMLResponse = templates.TemplateResponse(
         name=Templates.CATALOG.value,

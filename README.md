@@ -1,2 +1,2 @@
 # dachnik-velikie-luki
-It is website of store "Dachnik" in Velikie Luki.
+It is the website of the Dachnik store in Velikie Luki.

@@ -12,7 +12,7 @@ templates = Jinja2Templates(directory=Folders.TEMPLATES.value)
 products_router = APIRouter(prefix=Prefix.INDEX.value)
 
 @products_router.get(Endpoints.PRODUCTS.value, response_class=JSONResponse)
-def products():
+def products() -> JSONResponse:
 
     products_images_files_names_list: list[str] = get_files_names_list(
         extenstion=FileExtenstions.PNG.value, 
@@ -21,9 +21,10 @@ def products():
 
     products_data_list: list[dict] = get_dictionaries_list_from_strings_list(strings_list=products_images_files_names_list)
 
-    products_json_response: dict = {
+    products_json_dict: dict = {
         JSONKeys.PRODUCTS_IMAGES_FILES_NAMES_LIST.value: products_images_files_names_list,
         JSONKeys.PRODUCTS_DATA_LIST.value: products_data_list,
         }
-    
+
+    products_json_response = JSONResponse(content=products_json_dict)
     return products_json_response
