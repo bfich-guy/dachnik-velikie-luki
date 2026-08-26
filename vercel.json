@@ -5,6 +5,9 @@
       "use": "@vercel/python"
     }
   ],
+  "env": {
+    "DATABASE_FILE_PATH": "./database.db"
+  },
   "routes": [
     {
       "src": "/(.*)",
