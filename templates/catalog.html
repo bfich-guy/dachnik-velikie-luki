@@ -19,7 +19,7 @@
                 <button id="index-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/'">
                     Главная
                 </button>
-                <button id="help-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/help'">
+                <button id="faq-btn" class="dachnik-navigation-inline-menu-button" onclick="window.location.href='/faq'">
                     Помощь
                 </button>
             </div>
@@ -55,11 +55,6 @@
             </div>
             <div class="dachnik-background">
                 <p id="dachnik-phrase" class="dachnik-main-text"></p>
-            </div>
-            <div class="dachnik-background search-menu">
-                <button id="search-btn" class="search-button">
-                    <img src="/static/images/dachnik/dachnik_search_icon.png">
-                </button>
             </div>
             <div class="search-tree">
                 <div class="dachnik-background search-branch">
@@ -147,16 +142,14 @@
                     Наши товары
                 </p>
             </div>
-            <div id="product-catalog" class="dachnik-background product-grid">
+            <div id="products-catalog" class="dachnik-background product-grid">
                 
             </div>
         </main>
         <footer>
             
         </footer>
-        <script src="/static/js/catalog/checkboxlistening.js" type="module"></script>
-        <script src="/static/js/catalog/dachnikphrase.js" type="module"></script>
-        <script src="/static/js/catalog/generatecatalog.js" type="module"></script>
-        <script src="/static/js/catalog/searchproduct.js" type="module"></script>
+        <script src="/static/js/catalog/generate_catalog.js" type="module"></script>
+        <script src="/static/js/catalog/searchtree.js" type="module"></script>
     </body>
 </html>

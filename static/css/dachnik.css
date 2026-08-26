@@ -4,20 +4,6 @@
     background-color: white;
 }
 
-.dachnik-product-card {
-    border: 4px solid lime;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.dachnik-faq-card {
-    border: 4px solid lime;
-    border-radius: 16px;
-}
-
 
 /* Text */
 
@@ -26,11 +12,6 @@
     text-align: center;
     text-shadow: darkgreen 4px 4px 4px;
     font: bold 48px 'Arial';
-}
-
-.dachnik-product-title {
-    color: orange;
-    font: bold 32px 'Arial';
 }
 
 .dachnik-main-text {
@@ -50,20 +31,6 @@
     font: bold 16px 'Arial';
 }
 
-.dachnik-help-question-text {
-    color: orange;
-    font: bold 32px 'Arial';
-    text-align: left;
-    margin: 32px;
-}
-
-.dachnik-help-answer-text {
-    color: green;
-    font: bold 32px 'Arial';
-    text-align: left;
-    margin: 32px;
-}
-
 
 /* Button */
 
@@ -78,30 +45,6 @@
 
 .dachnik-navigation-inline-menu-button:hover {
     transition: 0.25s;
-    scale: 1.2;
-}
-
-.dachnik-main-button {
-    border: 8px solid green;
-    border-radius: 16px;
-    background: transparent;
-    padding: 16px 16px 16px 16px;
-    cursor: pointer;
-    font: bold 32px 'Arial';
-    color: green;
-}
-
-.dachnik-product-button{
-    background: transparent;
-    border: none;
-    padding: 0 0 16px 0;
-    cursor: pointer;
-    font: bold 32px 'Arial';
-    color: green;
-}
-
-.dachnik-product-button:hover {
-    transition: 0.5s;
     scale: 1.2;
 }
 
@@ -120,14 +63,6 @@
 .dachnik-product-grid-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2% 2% 2% 2%;
-    gap: 2%;
-    max-width: 100%;
-}
-
-.dachnik-faq-grid-menu {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
     padding: 2% 2% 2% 2%;
     gap: 2%;
     max-width: 100%;

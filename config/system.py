@@ -11,10 +11,10 @@ class Folders(Enum):
 class Files(Enum):
     ABOUT_US = "about_us"
     CATALOG = "catalog"
-    HELP = "help"
+    FAQ = "faq"
     INDEX = "index"
 
-    PRODUCTS = "products"
+    GENERATE_PRODUCTS_CATALOG = "generate_products_catalog"
 
 
 class FileExtenstions(Enum):
@@ -29,7 +29,20 @@ class DotenvServerKeys(Enum):
     APP_PORT = "APP_POST"
     APP_RELOAD = "APP_RELOAD"
 
+    DATABASE_FILE_PATH = "DATABASE_FILE_PATH"
+    DATABASE_KEY = "DATABASE_KEY"
+
 
 class Characters(Enum):
+    EMPTY = ""
+
     DOT = "."
     MINUS = "-"
+
+
+class DatabaseTables(Enum):
+    PRODUCTS = "products"
+
+
+class DatabaseFilePaths(Enum):
+    DEFAULT = "database.db"

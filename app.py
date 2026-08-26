@@ -7,11 +7,12 @@ from config.server import Mounts
 
 from utils.server import include_routers
 
-from routers.about_us import about_us_router
-from routers.catalog import catalog_router
-from routers.help import help_router
-from routers.index import index_router
-from routers.products import products_router
+from routers.templates.about_us import about_us_router
+from routers.templates.catalog import catalog_router
+from routers.templates.faq import faq_router
+from routers.templates.index import index_router
+from routers.server.generate_products_catalog import generate_products_catalog_router
+
 
 app = FastAPI()
 
@@ -33,9 +34,9 @@ app.add_middleware(
 routers_list: list[APIRouter] = [
     about_us_router,
     catalog_router,
-    help_router,
+    faq_router,
     index_router,
-    products_router,
+    generate_products_catalog_router,
 ]
 
 include_routers(

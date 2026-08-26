@@ -1,4 +1,4 @@
-import { descryptBase64InWidget } from "../utils/parsers.js";
+import { descryptBase64InWidget } from "../utils.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {

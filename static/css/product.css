@@ -16,6 +16,12 @@
     align-items: left;
 }
 
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* Text */
 
@@ -23,22 +29,4 @@
     color: white;
     font: bold 100% 'Arial';
     text-align: center;
-}
-
-
-/* Button */
-
-.product-button {
-    background: transparent;
-    border: none;
-    padding: 0 0 32px 0;
-    cursor: pointer;
-    font: bold 2vw 'Arial';
-    color: white;
-    scale: 1.0;
-    transition: scale 0.25s ease-in-out
-}
-
-.product-button:hover {
-    scale: 1.2;
 }
