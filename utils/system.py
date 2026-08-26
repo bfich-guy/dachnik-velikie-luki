@@ -67,3 +67,26 @@ def get_dictionaries_list_from_strings_list(
         dictionaries_list.append(dictionary)
 
     return dictionaries_list
+
+
+def do_lists_have_same_length(
+    *,
+    lists_matrix: list[list],
+) -> bool:
+
+    lists_matrix_is_empty: bool = not lists_matrix
+
+    if lists_matrix_is_empty:
+        return False
+
+    first_list: list = lists_matrix[0]
+    etalon_length: int = len(first_list)
+
+    for list_object in lists_matrix[1:]:
+        list_object_length: int = len(list_object)
+        lengths_mismatch_happened: bool = list_object_length != etalon_length
+
+        if lengths_mismatch_happened:
+            return False
+
+    return True
